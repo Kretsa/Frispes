@@ -1,0 +1,214 @@
+.reset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 230px;
+  padding: 8px 16px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: solid 1px #c7ccd1;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.reset:hover {
+  background-color: #D8093A;
+  color: #ffffff;
+}
+
+.__select {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 365px;
+  height: 68px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.__select > input {
+  position: absolute;
+  border: none;
+  font-family: 'lato';
+  font-weight: 500;
+  top: 16px;
+  left: 23px;
+  font-size: 16px;
+  background: #0D2C4A;
+}
+
+.__select[data-state="active"] .__select__title::before {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.__select[data-state="active"] .__select__title::after {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.__select[data-state="active"] .__select__label {
+  max-height: 40px;
+  border-width: 1px;
+}
+
+.__select[data-state="active"] .__select__label::before {
+  opacity: 1;
+  margin-left: 26px;
+}
+
+.__select .__select__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 365px;
+  cursor: pointer;
+  z-index: 0;
+  background: #0D2C4A;
+  cursor: pointer;
+}
+
+.__select .__select__title::before, .__select .__select__title::after {
+  content: "";
+  position: absolute;
+  top: 47%;
+  right: 30px;
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-image: url(../img/XMLID1506.png);
+}
+
+.__select .__select__title > label {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  color: #b6b6b69c;
+}
+
+.__select .__select__content {
+  position: absolute;
+  top: 107px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom-width: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 1;
+  background: #0D2C4A;
+  color: #fff;
+}
+
+.__select .__select__content .__select__input {
+  display: none;
+  pointer-events: none;
+}
+
+.__select .__select__content .__select__input:checked + label {
+  left: 0px;
+  top: -40px;
+  position: absolute;
+  background: #0D2C4A;
+  color: #fff;
+}
+
+.__select .__select__content .__select__input:checked + label::after {
+  content: attr(data-value);
+}
+
+.__select .__select__content .__select__input:disabled + label {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.__select__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 365px;
+  height: 40px;
+  max-height: 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.__select__label:hover {
+  background-color: #D8093A !important;
+  color: #ffffff;
+}
+
+.__select__label::before {
+  content: attr(data-value);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  opacity: 0;
+}
+
+.__select__label::after {
+  position: absolute;
+  top: -29px;
+  left: 25px;
+  font-family: 'lato';
+  font-weight: 500;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  z-index: -1;
+}
+
+.form_find_space {
+  width: 445px;
+  height: 459px;
+  background: #10375C;
+  position: relative;
+  z-index: 4;
+}
+
+.form_find_space .f_space {
+  font-family: Lora;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  padding-left: 40px;
+  padding-top: 42px;
+}
+
+.nativejs-select__placeholder {
+  width: 100%;
+  padding: 12px 15px;
+  color: #c4c4c4ba;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0D2C4A;
+}
+/*# sourceMappingURL=fortest.css.map */
